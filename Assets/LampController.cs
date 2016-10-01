@@ -4,6 +4,8 @@ using System.Collections;
 public class LampController : MonoBehaviour {
     public DetectClick lampClick;
     public Animator animator;
+    public HighlightObject isPointerIn;
+    public bool turnedOn;
     // Use this for initialization
     void Start()
     {
@@ -13,17 +15,18 @@ public class LampController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (lampClick.turnedOn || (animator.GetCurrentAnimatorStateInfo(0).IsName("LampOff") && Input.GetKeyDown(KeyCode.Space)))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("LampOff") && isPointerIn.isHighlighted && Input.GetButtonDown("Switch1"))
         {
             animator.SetTrigger("LampOnSwitchPressed");
             animator.ResetTrigger("LampOffSwitchPressed");
-
+            turnedOn = true;
         }
-        if (lampClick.turnedOff || (animator.GetCurrentAnimatorStateInfo(0).IsName("LampOn") && Input.GetKeyDown(KeyCode.Space)))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("LampOn") && isPointerIn.isHighlighted && Input.GetButtonDown("Switch1"))
+
         {
             animator.SetTrigger("LampOffSwitchPressed");
             animator.ResetTrigger("LampOnSwitchPressed");
-
+            turnedOn = false;
         }
     }
 }

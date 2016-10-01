@@ -41,7 +41,6 @@ GameObject:
   - 95: {fileID: 95000014262400156}
   - 114: {fileID: 114000010281728798}
   - 114: {fileID: 114000010778412272}
-  - 114: {fileID: 114000012255898762}
   - 114: {fileID: 114000011470039622}
   m_Layer: 0
   m_Name: New Prefab 1
@@ -222,23 +221,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114000012255898762}
-          m_MethodName: TurnOnOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &114000010778412272
 MonoBehaviour:
@@ -251,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a818bf1d7b1b7143beacd08c9adf964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHighlighted: 0
 --- !u!114 &114000011470039622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,18 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 957d74befe33ce14f93db90283a1edcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lampClick: {fileID: 114000012255898762}
+  lampClick: {fileID: 0}
   animator: {fileID: 95000014262400156}
---- !u!114 &114000012255898762
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012903020452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf327877be13565458f407eace7677df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  isPointerIn: {fileID: 114000010778412272}
   turnedOn: 0
-  turnedOff: 1

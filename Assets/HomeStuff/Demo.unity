@@ -109,12 +109,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738, type: 2}
   m_PrefabInternal: {fileID: 1784848109}
---- !u!114 &204820877 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000012903768892, guid: f670d749f98bfd148b834f46ca310aa0,
-    type: 2}
-  m_PrefabInternal: {fileID: 2130205448}
-  m_Script: {fileID: 11500000, guid: bf327877be13565458f407eace7677df, type: 3}
 --- !u!1001 &309088737
 Prefab:
   m_ObjectHideFlags: 0
@@ -978,7 +972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
+  m_SubmitButton: Switch1
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
@@ -1253,6 +1247,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11446276, guid: 60270cf52a5e94998a5a335989159738, type: 2}
+      propertyPath: reticleGrowthSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446276, guid: 60270cf52a5e94998a5a335989159738, type: 2}
+      propertyPath: reticleSegments
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60270cf52a5e94998a5a335989159738, type: 2}
   m_IsPrefabParent: 0
@@ -1314,6 +1316,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1843214567}
+  - 114: {fileID: 1843214568}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1353,6 +1356,17 @@ Transform:
   - {fileID: 1749907727}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1843214568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843214566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 243b9a38bfcffa24a9677a3996ffabf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862759940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,11 +1596,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1843214567}
     m_Modifications:
-    - target: {fileID: 114000011154848240, guid: f670d749f98bfd148b834f46ca310aa0,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4000012087106492, guid: f670d749f98bfd148b834f46ca310aa0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 10.557098
@@ -1623,21 +1632,6 @@ Prefab:
       propertyPath: m_Name
       value: Fan N220715 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114000011154848240, guid: f670d749f98bfd148b834f46ca310aa0,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011154848240, guid: f670d749f98bfd148b834f46ca310aa0,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011154848240, guid: f670d749f98bfd148b834f46ca310aa0,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 204820877}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f670d749f98bfd148b834f46ca310aa0, type: 2}
   m_IsPrefabParent: 0

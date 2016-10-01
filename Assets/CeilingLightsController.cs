@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CeilingLightsController : MonoBehaviour {
-    public DetectClick lightsClick;
+    public HighlightObject isPointerIn;
     public Animator animator;
     // Use this for initialization
     void Start()
@@ -13,13 +13,13 @@ public class CeilingLightsController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (lightsClick.turnedOn || (animator.GetCurrentAnimatorStateInfo(0).IsName("CeilingLightsOff") && Input.GetKeyDown(KeyCode.C)))
+        if (isPointerIn.isHighlighted && animator.GetCurrentAnimatorStateInfo(0).IsName("CeilingLightsOff") && Input.GetButtonDown("Switch1"))
         {
             animator.SetTrigger("CeilingLightsOn");
             animator.ResetTrigger("CeilingLightsOff");
 
         }
-        if (lightsClick.turnedOff || (animator.GetCurrentAnimatorStateInfo(0).IsName("CeilingLightsOn") && Input.GetKeyDown(KeyCode.C)))
+        if (isPointerIn.isHighlighted && animator.GetCurrentAnimatorStateInfo(0).IsName("CeilingLightsOn") && Input.GetButtonDown("Switch1"))
         {
             animator.SetTrigger("CeilingLightsOff");
             animator.ResetTrigger("CeilingLightsOn");

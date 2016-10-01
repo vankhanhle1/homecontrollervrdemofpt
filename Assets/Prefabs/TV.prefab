@@ -26,7 +26,6 @@ GameObject:
   - 114: {fileID: 114000011985691192}
   - 114: {fileID: 114000012674671798}
   - 114: {fileID: 114000010423722056}
-  - 114: {fileID: 114000012479379862}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -666,7 +665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95000012790561410}
-  teeveeClick: {fileID: 114000012479379862}
+  isPointerIn: {fileID: 114000012674671798}
+  turnedon: 0
 --- !u!114 &114000011143786466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -767,23 +767,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 114000012479379862}
-          m_MethodName: TurnOnOff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &114000012277834628
 MonoBehaviour:
@@ -818,19 +801,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 3
---- !u!114 &114000012479379862
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010044753100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf327877be13565458f407eace7677df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnedOn: 0
-  turnedOff: 1
 --- !u!114 &114000012502760124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -869,6 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a818bf1d7b1b7143beacd08c9adf964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isHighlighted: 0
 --- !u!114 &114000013091619448
 MonoBehaviour:
   m_ObjectHideFlags: 1

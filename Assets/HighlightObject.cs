@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HighlightObject : MonoBehaviour {
-
+    public bool isHighlighted;
 	// Use this for initialization
 
 	
@@ -11,11 +11,13 @@ public class HighlightObject : MonoBehaviour {
 	}
     public void Highlight()
     {
-        GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+        //GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+        isHighlighted = true;
     }
 
     public void DeHighlight()
     {
-        GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+        //GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+        isHighlighted = false;
     }
 }

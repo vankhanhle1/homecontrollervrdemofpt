@@ -7,6 +7,7 @@ public class DetectClick : MonoBehaviour {
     public bool turnedOn;
     public bool turnedOff = true;
 
+
     // Use this for initialization
     void Start() {
 

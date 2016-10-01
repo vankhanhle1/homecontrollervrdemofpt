@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FanController : MonoBehaviour {
-    public DetectClick fanClick;
+    public HighlightObject isPointerIn;
     public Animator animator;
     // Use this for initialization
     void Start() {
@@ -11,13 +11,13 @@ public class FanController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (fanClick.turnedOn || (animator.GetCurrentAnimatorStateInfo(0).IsName("FanOff") && Input.GetKeyDown(KeyCode.F)))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("FanOff") && isPointerIn.isHighlighted && Input.GetButtonDown("Switch1"))
         {
             animator.SetTrigger("FanOnSwitchPressed");
             animator.ResetTrigger("FanOffSwitchPressed");
 
         }
-        if (fanClick.turnedOff || (animator.GetCurrentAnimatorStateInfo(0).IsName("FanOn") && Input.GetKeyDown(KeyCode.F)))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("FanOn") && isPointerIn.isHighlighted && Input.GetButtonDown("Switch1"))
         {
             animator.SetTrigger("FanOffSwitchPressed");
             animator.ResetTrigger("FanOnSwitchPressed");
