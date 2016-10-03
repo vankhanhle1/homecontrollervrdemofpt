@@ -148,6 +148,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010423722056, guid: a2253bdb209caf64285c40853b399eeb,
+        type: 2}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1843214568}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2253bdb209caf64285c40853b399eeb, type: 2}
   m_IsPrefabParent: 0
@@ -625,15 +630,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000014108274958, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.0234413
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 4000014108274958, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.22027
+      value: -6.99
       objectReference: {fileID: 0}
     - target: {fileID: 4000014108274958, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 97.09411
+      value: 97.49
       objectReference: {fileID: 0}
     - target: {fileID: 4000014108274958, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -659,6 +664,11 @@ Prefab:
       propertyPath: m_Name
       value: TallLamp
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011470039622, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a,
+        type: 2}
+      propertyPath: vol
+      value: 
+      objectReference: {fileID: 1843214568}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef03bc3c1af3c4b488e277b7fa9e3d1a, type: 2}
   m_IsPrefabParent: 0
@@ -1367,6 +1377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243b9a38bfcffa24a9677a3996ffabf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 0
+  volumeUp: 0
+  volumeDown: 0
 --- !u!1 &1862759940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,8 +1405,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862759940}
   m_LocalRotation: {x: 0.8016472, y: 0.32892668, z: 0.18948512, w: -0.46180567}
-  m_LocalPosition: {x: 2.42, y: 12.18, z: 87.28}
-  m_LocalScale: {x: 22.616913, y: 19.963634, z: 0.5249996}
+  m_LocalPosition: {x: -35.9, y: 19.9, z: 100.3}
+  m_LocalScale: {x: 285.45776, y: 285.55978, z: 0.5249996}
   m_LocalEulerAnglesHint: {x: -59.890003, y: 180, z: 135.382}
   m_Children: []
   m_Father: {fileID: 1843214567}

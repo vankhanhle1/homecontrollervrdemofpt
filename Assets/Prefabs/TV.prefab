@@ -667,6 +667,11 @@ MonoBehaviour:
   animator: {fileID: 95000012790561410}
   isPointerIn: {fileID: 114000012674671798}
   turnedon: 0
+  audio0: {fileID: 1000010621241864}
+  audio1: {fileID: 1000010580176992}
+  audio2: {fileID: 1000013481154134}
+  audio3: {fileID: 1000013293331138}
+  controller: {fileID: 0}
 --- !u!114 &114000011143786466
 MonoBehaviour:
   m_ObjectHideFlags: 1
