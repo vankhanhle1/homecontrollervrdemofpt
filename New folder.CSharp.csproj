@@ -67,8 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CeilingLightsController.cs" />
-    <Compile Include="Assets\ControlObject.cs" />
-    <Compile Include="Assets\ControllerTest.cs" />
     <Compile Include="Assets\DetectClick.cs" />
     <Compile Include="Assets\FanController.cs" />
     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
@@ -115,8 +113,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
     <Compile Include="Assets\HighlightObject.cs" />
     <Compile Include="Assets\LampController.cs" />
-    <Compile Include="Assets\PickObject.cs" />
-    <Compile Include="Assets\RightButtonEvent.cs" />
     <Compile Include="Assets\SelectObject.cs" />
     <Compile Include="Assets\SwitchChannels.cs" />
     <Compile Include="Assets\TestController.cs" />
